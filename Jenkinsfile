@@ -10,7 +10,7 @@ pipeline {
         RELEASE = '1.0.0'
         DOCKER_USER = "Deleany"
         DOCKER_PASS = "dockehub-token"
-        IMAGE_NAME = "${DOKCE_USER}/${APP_NAME}"
+        IMAGE_NAME = "${DOCKER_PASS}/${APP_NAME}"
         IMAGE_TAG = "${RELEASE}-${BUILD_NUMBER}"
     }
     stages {
